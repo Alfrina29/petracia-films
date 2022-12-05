@@ -28,3 +28,9 @@ Route::get('/about', function () {
         "tahun" => "2022"
     ]);
 });
+
+Route::get('/film', function () {
+    return view('film', [
+        "tittle" => "Daftar Film"
+    ]);
+});
