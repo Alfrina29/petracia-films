@@ -34,10 +34,10 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
       <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link {{ ($tittle === "Home") ? 'active' : ''}}" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link {{ ($tittle === "About") ? 'active' : ''}}" href="/about">About</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
