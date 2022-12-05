@@ -23,5 +23,8 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('about', [
-        "tittle" => "About"]);
+        "tittle" => "About",
+        "nama" => "Petracia films",
+        "tahun" => "2022"
+    ]);
 });
