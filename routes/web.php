@@ -20,6 +20,11 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/film', function () {
+    return view('film', [
+        "tittle" => "Daftar Film"
+    ]);
+});
 
 Route::get('/about', function () {
     return view('about', [
@@ -29,8 +34,3 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/film', function () {
-    return view('film', [
-        "tittle" => "Daftar Film"
-    ]);
-});

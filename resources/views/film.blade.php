@@ -3,10 +3,15 @@
 @section('container')
 <!-- Button trigger modal -->
 <div class="container mt-3">
-
-    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal">
+  <div class="row">
+    <div class="col-6">
+      <h3>Daftar Films PETRACIA FILMS</h3>
+      <br><br>
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal">
         Tambah Daftar Film
     </button>
+    </div>
+  </div>
 </div>
 
 <!-- Modal -->
@@ -22,7 +27,11 @@
           <div class="mb-3">
             <label for="judulFilm" class="form-label">Judul Film</label>
             <input type="text" class="form-control" id="judulFilm" name="judulFilm">
-            </div>
+          </div>
+          <div class="mb-3">
+            <label for="genre" class="form-label">Genre</label>
+            <input type="text" class="form-control" id="genre" name="genre">
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

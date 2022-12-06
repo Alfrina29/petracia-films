@@ -37,11 +37,12 @@
           <a class="nav-link {{ ($tittle === "Home") ? 'active' : ''}}" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ($tittle === "About") ? 'active' : ''}}" href="/about">About</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link {{ ($tittle === "Daftar Film") ? 'active' : ''}}" href="/film">Daftar Films</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {{ ($tittle === "About") ? 'active' : ''}}" href="/about">About</a>
+        </li>
+       
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -53,7 +54,7 @@
 </nav>
 
 <div class ="container mt-4">
-  @yield('container');
+  @yield('container')
 </div>
 
 
