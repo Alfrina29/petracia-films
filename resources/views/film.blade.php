@@ -24,6 +24,10 @@
       </div>
       <div class="modal-body">
         <form action="" method="">
+          <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+          </div>
           <div class="mb-3">
             <label for="judulFilm" class="form-label">Judul Film</label>
             <input type="text" class="form-control" id="judulFilm" name="judulFilm">
