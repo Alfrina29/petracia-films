@@ -2,16 +2,21 @@
 @extends('layouts.main')
 
 @section('container')
+@foreach ($lists as $list )
+<br></br>
+<div class="container mt-3" style="color : white">
+  <div class="row">
+    <img src="img/{{ $list['image'] }}" alt="{{ $tittle }}" style="height : 200px; width : 200px;" >
+    <h4>{{ $list ["tittle"] }}</h4>
+    <h5>{{ $list ["tahun"] }}</h5>
+    <h5>{{ $list ["genre"] }}</h5>
+  </div>
+</div>
+@endforeach
 <!-- Button trigger modal -->
 <div class="container mt-3">
   <div class="row">
     <div class="col-6">
-      <br></br>
-      <ul class="apa" style="color : white">
-        <li>Judul</li>
-        <li>tahun</li>
-        <li>genre</li>
-      </ul>
       <br></br>
       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal">
         Tambah Daftar Film
@@ -19,6 +24,7 @@
     </div>
   </div>
 </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
@@ -37,6 +43,10 @@
           <div class="mb-3">
             <label for="judulFilm" class="form-label">Judul Film</label>
             <input type="text" class="form-control" id="judulFilm" name="judulFilm">
+          </div>
+          <div class="mb-3">
+            <label for="tahun" class="form-label">Tahun</label>
+            <input type="text" class="form-control" id="tahun" name="tahun">
           </div>
           <div class="mb-3">
             <label for="genre" class="form-label">Genre</label>

@@ -23,11 +23,13 @@ Route::get('/', function () {
 Route::get('/film', function () {
     $daftar_film = [
         [
+            "image" => "avanger.jpg",
             "tittle" => "Avangers",
             "tahun" => "2017",
             "genre" => "Action"
         ],
         [
+            "image" => "kkn.jpg",
             "tittle" => "KKN Desa Penari",
             "tahun" => "2022",
             "genre" => "Horor"
@@ -36,7 +38,7 @@ Route::get('/film', function () {
     
     return view('film', [
         "tittle" => "Daftar Film",
-        "list" => $daftar_film 
+        "lists" => $daftar_film 
     ]);
 });
 
@@ -48,4 +50,5 @@ Route::get('/about', function () {
     ]);
 });
 
+//halaman singel list
 
