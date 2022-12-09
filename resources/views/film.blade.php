@@ -1,3 +1,4 @@
+
 @extends('layouts.main')
 
 @section('container')
@@ -5,8 +6,13 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-6">
-      <h3>Daftar Films PETRACIA FILMS</h3>
-      <br><br>
+      <br></br>
+      <ul class="apa" style="color : white">
+        <li>Judul</li>
+        <li>tahun</li>
+        <li>genre</li>
+      </ul>
+      <br></br>
       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal">
         Tambah Daftar Film
     </button>

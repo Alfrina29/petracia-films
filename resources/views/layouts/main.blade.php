@@ -15,7 +15,7 @@
     background-attachment: fixed;
    }
    .jumbotron{ 
-    padding-top: 2rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
     padding-left:2rem; 
     padding-right:2rem; 
@@ -25,7 +25,7 @@
     margin-bottom: 2rem;
    } 
    </style>
-<nav class="navbar navbar-expand-lg navbar-dark shadow-sm navbar-fixed-top" style="background-color : black">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color : black">
   <div class="container">
     <a class="navbar-brand" style="font-family:'Mumblers Demo'" href="/">PETRACIA film</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

@@ -3,9 +3,8 @@
 
 @section('container')
 <!-- Jumbotron -->
-<div class="container">
-  <h1 class="mt-4" style="color: white;">About me</h1>
-  <img src="img/foto.jpg" alt="Foto" width="200" class="rounded-circle" />
+<div class="container mb-3">
+  <img src="img/foto.jpg" alt="Foto" width="200" class="rounded-circle mt-5" />
   <h2 class="mt-3" style="font-family:'Mumblers Demo'; color: white;">{{ $nama }}</h2>
       <p style="color: white;">{{ $nama }}, adalah website yang dibuat pada tahun {{ $tahun }} yang digunakan untuk mencari film apapun yang ingin Anda tonton dalam berbagi genre. Selain itu, Anda juga dapat mengetahui informasi lebih lengkap tentang film tersebut.</p>
 </div>

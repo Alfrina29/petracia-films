@@ -21,8 +21,22 @@ Route::get('/', function () {
 });
 
 Route::get('/film', function () {
+    $daftar_film = [
+        [
+            "tittle" => "Avangers",
+            "tahun" => "2017",
+            "genre" => "Action"
+        ],
+        [
+            "tittle" => "KKN Desa Penari",
+            "tahun" => "2022",
+            "genre" => "Horor"
+        ]
+    ];
+    
     return view('film', [
-        "tittle" => "Daftar Film"
+        "tittle" => "Daftar Film",
+        "list" => $daftar_film 
     ]);
 });
 
@@ -33,4 +47,5 @@ Route::get('/about', function () {
         "tahun" => "2022"
     ]);
 });
+
 
