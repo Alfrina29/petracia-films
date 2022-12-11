@@ -12,7 +12,22 @@ class Film extends Model
     protected $guarded = ['id'];
     protected $with = 'genre';
 
-    public function genre(){
+    public function scopeFilter($query, array $filters)
+    {
+        $query->when($filters['search'] ?? false, function ($query, $search) {
+            return  $query->where('tittle', 'like', '%' . $search . '%')
+                ->orWhere('tahun', 'like', '%' . $search  . '%');
+        });
+
+        $query->when($filters['genre'] ?? false, function ($query, $genre) {
+            return $query->whereHas('genre', function ($query) use ($genre) {
+                $query->where($genre);
+            });
+        });
+    }
+
+    public function genre()
+    {
         return $this->belongsTo(Genre::class);
     }
 }

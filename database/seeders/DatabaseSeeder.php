@@ -74,5 +74,11 @@ class DatabaseSeeder extends Seeder
             'tahun' => '2018',
             'genre_id' => 3
         ]);
+
+        Film::create([
+            'tittle' => 'Cek Toko Sebelah',
+            'tahun' => '2018',
+            'genre_id' => 3
+        ]);
     }
 }
