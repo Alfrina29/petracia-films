@@ -2,63 +2,40 @@
 @extends('layouts.main')
 
 @section('container')
-@foreach ($lists as $list )
+{{-- @if($lists->count())
 <br></br>
-<div class="container mt-3" style="color : white">
+<div class="container">
   <div class="row">
-    <img src="img/{{ $list['image'] }}" alt="{{ $tittle }}" style="height : 200px; width : 200px;" >
-    <h4>{{ $list ["tittle"] }}</h4>
-    <h5>{{ $list ["tahun"] }}</h5>
-    <h5>{{ $list ["genre"] }}</h5>
-  </div>
-</div>
-@endforeach
-<!-- Button trigger modal -->
-<div class="container mt-3">
-  <div class="row">
-    <div class="col-6">
-      <br></br>
-      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal">
-        Tambah Daftar Film
-    </button>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-tittel">{{ $lists[0]->tittle }}</h3>
+          <p class="card-text">Tahun Rilis : {{ $lists[0]->tahun }}</p>
+          <p>Genre Film : {{ $lists[0]->genre->genre }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+@else
+<p class="text-center fs-4">No Post found.</p>
+@endif --}}
 
-
-<!-- Modal -->
-<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="judulModal">Tambah Daftar Film</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="">
-          <div class="input-group mb-3">
-            <input type="file" class="form-control" id="inputGroupFile02">
-            <label class="input-group-text" for="inputGroupFile02">Upload</label>
-          </div>
-          <div class="mb-3">
-            <label for="judulFilm" class="form-label">Judul Film</label>
-            <input type="text" class="form-control" id="judulFilm" name="judulFilm">
-          </div>
-          <div class="mb-3">
-            <label for="tahun" class="form-label">Tahun</label>
-            <input type="text" class="form-control" id="tahun" name="tahun">
-          </div>
-          <div class="mb-3">
-            <label for="genre" class="form-label">Genre</label>
-            <input type="text" class="form-control" id="genre" name="genre">
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Tambah Film</button>
-      </form>
+<br></br>
+<div class="container">
+  <div class="row">
+    @foreach ($lists as $list )
+    <div class="col-md-3">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <h3 class="card-tittel">{{ $list->tittle }}</h3>
+        <p class="card-text">Tahun Rilis : {{ $list->tahun }}</p>
+        <p>Genre Film : {{ $list->genre->genre }}</p>
+        </div>
       </div>
     </div>
+    @endforeach
   </div>
 </div>
 

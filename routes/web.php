@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Film;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FilmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,27 +22,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/film', function () {
-    $daftar_film = [
-        [
-            "image" => "avanger.jpg",
-            "tittle" => "Avangers",
-            "tahun" => "2017",
-            "genre" => "Action"
-        ],
-        [
-            "image" => "kkn.jpg",
-            "tittle" => "KKN Desa Penari",
-            "tahun" => "2022",
-            "genre" => "Horor"
-        ]
-    ];
-    
-    return view('film', [
-        "tittle" => "Daftar Film",
-        "lists" => $daftar_film 
-    ]);
-});
+Route::get('/film', [FilmController::class, 'index']);
 
 Route::get('/about', function () {
     return view('about', [

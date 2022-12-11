@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Film;
+use App\Models\Genre;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,11 +16,63 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+
+        Genre::create([
+            'genre' => 'Horor'
+        ]);
+
+        Genre::create([
+            'genre' => 'Action'
+        ]);
+
+        Genre::create([
+            'genre' => 'Comedy'
+        ]);
+
+        Genre::create([
+            'genre' => 'Romace'
+        ]);
+
+       // Film::factory(5)->create();
+
+        Film::create([
+            'tittle' => 'KKN Desa Penari',
+            'tahun' => '2022',
+            'genre_id' => 1
+        ]);
+
+        Film::create([
+            'tittle' => 'Avengers',
+            'tahun' => '2017',
+            'genre_id' => 2
+        ]);
+
+
+        Film::create([
+            'tittle' => 'Ivana',
+            'tahun' => '2022',
+            'genre_id' => 1
+        ]);
+
+        
+        Film::create([
+            'tittle' => 'Ada Apa Dengan Cinta',
+            'tahun' => '2002',
+            'genre_id' => 4
+        ]);
+
+        Film::create([
+            'tittle' => 'Yowis Ben',
+            'tahun' => '2018',
+            'genre_id' => 3
+        ]);
     }
 }
