@@ -40,7 +40,6 @@
             </div>
         </div>
 
-        
         <div class="container">
             <div class="row">
                 @foreach ($lists as $list)
@@ -55,7 +54,8 @@
                 @endforeach
             </div>
         </div>
-    @else
+        @else
         <p class="text-center fs-4">No Post found.</p>
     @endif
+  
 @endsection
