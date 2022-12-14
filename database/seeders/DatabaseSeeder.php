@@ -70,7 +70,7 @@ class DatabaseSeeder extends Seeder
             'tittle' => 'Ada Apa Dengan Cinta',
             'tahun' => '2002',
             'genre_id' => 4,
-            'gambar' => ''
+            'gambar' => 'https://i.ibb.co/DRG9Dpy/ada-apa.jpg'
         ]);
 
         Film::create([
