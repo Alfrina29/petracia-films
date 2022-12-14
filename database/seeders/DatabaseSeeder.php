@@ -74,17 +74,17 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Film::create([
-            'tittle' => 'Yowis Ben',
+            'tittle' => 'Dilan 1990',
             'tahun' => '2018',
-            'genre_id' => 3,
-            'gambar' => 'https://i.ibb.co/GTchvHT/yowis-ben.jpg'
+            'genre_id' => 4,
+            'gambar' => 'https://i.ibb.co/nbQ5htM/Dilan.jpg'
         ]);
 
         Film::create([
-            'tittle' => 'Cek Toko Sebelah',
-            'tahun' => '2018',
+            'tittle' => 'My Stupid Boss',
+            'tahun' => '2016',
             'genre_id' => 3,
-            'gambar' => 'https://i.ibb.co/FwYB5mW/Cek-toko-sebelah.jpg'
+            'gambar' => 'https://i.ibb.co/VV7X3Y2/stupid-boss.jpg'
         ]);
     }
 }

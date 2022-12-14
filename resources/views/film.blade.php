@@ -2,10 +2,10 @@
 
 @section('container')
     <br></br>
-    <h1 class="mb-3 text-center" style="color: aliceblue; font-family: 'Times New Roman', Times, serif ">{{ $tittle }}</h1>
+    {{-- <h1 class="mb-3 text-center" style="color: aliceblue; font-family: 'Times New Roman', Times, serif ">{{ $tittle }}</h1> --}}
     @if ($lists->count())
         <br></br>
-        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-4">
             <div class="col-md-6">
                 <form action="/film" method="get">
                     <div class="input-group mb-3">
@@ -22,7 +22,7 @@
                     <div class="col-md-3 m-3" style="">
                         <div class="card " style="font-family: 'Times New Roman', Times, serif ">
                             <img src="{{ $list->gambar }}" class="card-img-top" alt="...">
-                            <center><h3 class="card-tittel">{{ $list->tittle }}</h3></center>
+                            <h3 class="card-tittel" style="text-align : center">{{ $list->tittle }}</h3>
                             <p class="card-text">Tahun Rilis : {{ $list->tahun }}</p>
                             <p>Genre Film : {{ $list->genre }}</p>
                         </div>
@@ -32,7 +32,7 @@
         </div>
     @else
         <br></br>
-        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-4">
             <div class="col-md-6">
                 <form action="/film" method="get">
                     <div class="input-group mb-3">
