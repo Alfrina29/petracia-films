@@ -46,39 +46,45 @@ class DatabaseSeeder extends Seeder
         Film::create([
             'tittle' => 'KKN Desa Penari',
             'tahun' => '2022',
-            'genre_id' => 1
+            'genre_id' => 1,
+            'gambar' => 'https://i.ibb.co/VStpvqq/kkn.jpg'
         ]);
 
         Film::create([
             'tittle' => 'Avengers',
             'tahun' => '2017',
-            'genre_id' => 2
+            'genre_id' => 2,
+            'gambar' => 'https://i.ibb.co/ChBb11h/avenger.jpg'
         ]);
 
 
         Film::create([
             'tittle' => 'Ivana',
             'tahun' => '2022',
-            'genre_id' => 1
+            'genre_id' => 1,
+            'gambar' => 'https://i.ibb.co/yXKs6fC/ivanna.jpg'
         ]);
 
         
         Film::create([
             'tittle' => 'Ada Apa Dengan Cinta',
             'tahun' => '2002',
-            'genre_id' => 4
+            'genre_id' => 4,
+            'gambar' => ''
         ]);
 
         Film::create([
             'tittle' => 'Yowis Ben',
             'tahun' => '2018',
-            'genre_id' => 3
+            'genre_id' => 3,
+            'gambar' => 'https://i.ibb.co/GTchvHT/yowis-ben.jpg'
         ]);
 
         Film::create([
             'tittle' => 'Cek Toko Sebelah',
             'tahun' => '2018',
-            'genre_id' => 3
+            'genre_id' => 3,
+            'gambar' => 'https://i.ibb.co/FwYB5mW/Cek-toko-sebelah.jpg'
         ]);
     }
 }

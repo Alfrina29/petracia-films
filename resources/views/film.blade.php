@@ -42,7 +42,7 @@
                 @foreach ($lists as $list)
                     <div class="col-md-3 m-3">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="{{ $list->gambar }}" class="card-img-top" alt="...">
                             <h3 class="card-tittel">{{ $list->tittle }}</h3>
                             <p class="card-text">Tahun Rilis : {{ $list->tahun }}</p>
                             <p>Genre Film : {{ $list->genre}}</p>
