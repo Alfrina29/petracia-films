@@ -2,7 +2,7 @@
 
 @section('container')
     <br></br>
-    <h1 class="mb-3 text-center" style="color: aliceblue">{{ $tittle }}</h1>
+    <h1 class="mb-3 text-center" style="color: aliceblue; font-family: 'Times New Roman', Times, serif ">{{ $tittle }}</h1>
     @if ($lists->count())
         <br></br>
         <div class="row justify-content-center mb-3">
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 @foreach ($lists as $list)
                     <div class="col-md-3 m-3" style="">
                         <div class="card " style="font-family: 'Times New Roman', Times, serif ">

@@ -27,13 +27,13 @@
    </style>
 <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color : black">
   <div class="container">
-    <a class="navbar-brand" style="font-family:'Mumblers Demo'" href="/">PETRACIA film</a>
+    <a class="navbar-brand" style="font-family:'Mumblers Demo'" href="/">PETRACIA FILMS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-      <li class="nav-item">
+      <div class="navbar-nav ms-auto" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+      <li class="nav-item" >
           <a class="nav-link {{ ($tittle === "Home") ? 'active' : ''}}" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
