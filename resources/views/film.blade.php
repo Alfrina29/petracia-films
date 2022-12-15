@@ -21,10 +21,16 @@
                 @foreach ($lists as $list)
                     <div class="col-md-3 m-3" style="">
                         <div class="card " style="font-family: 'Times New Roman', Times, serif ">
-                            <img src="{{ $list->gambar }}" class="card-img-top" alt="...">
+                            <img src="/storage/{{ $list->gambar }}" class="card-img-top" alt="...">
                             <h3 class="card-tittel" style="text-align : center">{{ $list->tittle }}</h3>
                             <p class="card-text">Tahun Rilis : {{ $list->tahun }}</p>
                             <p>Genre Film : {{ $list->genre }}</p>
+                            <div style="display: flex;
+                            justify-content: flex-end;
+                            padding: 0 10px 10px 0;">
+                                <a href="/edit/{{ $list->id }}" class="btn btn-primary" style="margin-right: 5px">Edit</a>
+                                <button class="btn btn-danger">Hapus</button>
+                            </div>
                         </div>
                     </div>
                 @endforeach

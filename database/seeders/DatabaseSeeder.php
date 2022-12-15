@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
 
 
         Genre::create([
-            'genre' => 'Horor'
+            'genre' => 'Horror'
         ]);
 
         Genre::create([
@@ -38,7 +38,23 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Genre::create([
-            'genre' => 'Romace'
+            'genre' => 'Romance'
+        ]);
+
+        Genre::create([
+            'genre' => 'Fantasy'
+        ]);
+
+        Genre::create([
+            'genre' => 'Thriller'
+        ]);
+
+        Genre::create([
+            'genre' => 'Psycho-Thriller'
+        ]);
+
+        Genre::create([
+            'genre' => 'Drama'
         ]);
 
        // Film::factory(5)->create();
@@ -47,14 +63,14 @@ class DatabaseSeeder extends Seeder
             'tittle' => 'KKN Desa Penari',
             'tahun' => '2022',
             'genre_id' => 1,
-            'gambar' => 'https://i.ibb.co/VStpvqq/kkn.jpg'
+            'gambar' => '/gambar-film/kkn.jpg'
         ]);
 
         Film::create([
             'tittle' => 'Avengers',
             'tahun' => '2017',
             'genre_id' => 2,
-            'gambar' => 'https://i.ibb.co/ChBb11h/avenger.jpg'
+            'gambar' => '/gambar-film/avenger.jpg'
         ]);
 
 
@@ -62,7 +78,7 @@ class DatabaseSeeder extends Seeder
             'tittle' => 'Ivana',
             'tahun' => '2022',
             'genre_id' => 1,
-            'gambar' => 'https://i.ibb.co/yXKs6fC/ivanna.jpg'
+            'gambar' => '/gambar-film/ivanna.jpg'
         ]);
 
         
@@ -70,21 +86,21 @@ class DatabaseSeeder extends Seeder
             'tittle' => 'Ada Apa Dengan Cinta',
             'tahun' => '2002',
             'genre_id' => 4,
-            'gambar' => 'https://i.ibb.co/DRG9Dpy/ada-apa.jpg'
+            'gambar' => '/gambar-film/adaapa.jpg'
         ]);
 
         Film::create([
             'tittle' => 'Dilan 1990',
             'tahun' => '2018',
             'genre_id' => 4,
-            'gambar' => 'https://i.ibb.co/nbQ5htM/Dilan.jpg'
+            'gambar' => '/gambar-film/Dilan.jpg'
         ]);
 
         Film::create([
             'tittle' => 'My Stupid Boss',
             'tahun' => '2016',
             'genre_id' => 3,
-            'gambar' => 'https://i.ibb.co/VV7X3Y2/stupid-boss.jpg'
+            'gambar' => '/gambar-film/stupidboss.jpg'
         ]);
     }
 }

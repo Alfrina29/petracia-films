@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('genre_id');
             $table->string('tittle')->unique();
             $table->string('tahun');
-            $table->string('gambar');
+            $table->string('gambar')->nullable(true);
            $table->timestamps();
            
             $table->foreign('genre_id')->references('id')->on('genres');

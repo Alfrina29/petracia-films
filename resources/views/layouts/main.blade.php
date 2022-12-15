@@ -42,7 +42,9 @@
         <li class="nav-item">
           <a class="nav-link {{ ($tittle === "About") ? 'active' : ''}}" href="/about">About</a>
         </li>
-       
+        <li class="nav-item">
+          <a class="nav-link {{ ($tittle === "Tambah") ? 'active' : ''}}" href="/tambah-film">Tambah Film</a>
+        </li>
       </ul>
       </div>
     </div>

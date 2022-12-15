@@ -32,5 +32,14 @@ Route::get('/about', function () {
     ]);
 });
 
+// Route::get('/tambah-film', function() {
+//     return view('tambah', [
+//         'tittle' => 'Tambah'
+//     ]);
+// });
+
+Route::get('/tambah-film', [FilmController::class, 'tambahPage']);
+Route::post('/tambah', [FilmController::class, 'tambahFilm']);
+Route::get('/edit/{id}', [FilmController::class, 'edit']);
 //halaman singel list
 
